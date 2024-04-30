@@ -11,6 +11,8 @@
 		D3300E172BE1119B009EE076 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3300E162BE1119B009EE076 /* ContentView.swift */; };
 		D3300E192BE1119D009EE076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3300E182BE1119D009EE076 /* Assets.xcassets */; };
 		D3300E1C2BE1119D009EE076 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3300E1B2BE1119D009EE076 /* Preview Assets.xcassets */; };
+		D3300E242BE1124E009EE076 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = D3300E232BE1124E009EE076 /* GoogleMobileAds */; };
+		D3300E262BE112DD009EE076 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3300E252BE112DD009EE076 /* BannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		D3300E162BE1119B009EE076 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D3300E182BE1119D009EE076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3300E1B2BE1119D009EE076 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3300E252BE112DD009EE076 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3300E242BE1124E009EE076 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				D3300E142BE1119B009EE076 /* AdMob_BannerApp.swift */,
+				D3300E252BE112DD009EE076 /* BannerView.swift */,
 				D3300E162BE1119B009EE076 /* ContentView.swift */,
 				D3300E182BE1119D009EE076 /* Assets.xcassets */,
 				D3300E1A2BE1119D009EE076 /* Preview Content */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "AdMob-Banner";
+			packageProductDependencies = (
+				D3300E232BE1124E009EE076 /* GoogleMobileAds */,
+			);
 			productName = "AdMob-Banner";
 			productReference = D3300E112BE1119B009EE076 /* AdMob-Banner.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = D3300E082BE1119A009EE076;
+			packageReferences = (
+				D3300E222BE1124E009EE076 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = D3300E122BE1119B009EE076 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				D3300E172BE1119B009EE076 /* ContentView.swift in Sources */,
 				D3300E152BE1119B009EE076 /* AdMob_BannerApp.swift in Sources */,
+				D3300E262BE112DD009EE076 /* BannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3300E222BE1124E009EE076 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3300E232BE1124E009EE076 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3300E222BE1124E009EE076 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D3300E092BE1119A009EE076 /* Project object */;
 }
